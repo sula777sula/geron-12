@@ -1,0 +1,380 @@
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+}
+
+input[type=text] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+p, h1, h2, h3, h4, h5, h6, body {
+  margin: 0;
+}
+
+body footer, body .achievements .container .card, body .achievements .container, body .profile .block, body .profile, body .main-form form .select, body .main-form form, body .cards, body .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn.orange {
+  color: #ff3d00;
+  border: 1px solid #ff3d00;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.4s;
+}
+.btn.orange:hover {
+  color: #ff3d00;
+  border: 1px solid #ff3d00;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.4s;
+  color: #fff;
+  background-color: #ff3d00;
+  cursor: pointer;
+}
+.btn.blue {
+  color: #0085ff;
+  border: 1px solid #0085ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.4s;
+}
+.btn.blue:hover {
+  color: #0085ff;
+  border: 1px solid #0085ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.4s;
+  color: #fff;
+  background-color: #0085ff;
+  cursor: pointer;
+}
+.btn.white {
+  color: #fff;
+  border: 1px solid #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.4s;
+}
+.btn.white:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.4s;
+  color: #fff;
+  background-color: #fff;
+  cursor: pointer;
+  color: #0085ff;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+body {
+  padding: 0 16%;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 0;
+}
+body header .burger-menu .line {
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3px;
+}
+body header .burger-menu .line:last-child {
+  margin: 0;
+}
+body header h1 {
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+body header h1.active {
+  color: #ef5da8;
+}
+body header h1:hover {
+  color: #ff3d00;
+  cursor: pointer;
+}
+body header nav a.active svg path {
+  fill: #ff3d00;
+}
+body header nav svg:first-child {
+  margin-right: 20px;
+}
+body header nav svg:hover {
+  scale: 1.2;
+}
+body .main .block {
+  width: 48%;
+  background-color: #0085ff;
+  border-radius: 8px;
+}
+body .main .block .cover {
+  padding-top: 80%;
+  width: 100%;
+  position: relative;
+}
+body .main .block .cover img,
+body .main .block .cover .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .main .block .cover img {
+  border-radius: 8px;
+}
+body .main .block .cover .content h2 {
+  margin: 34px 55px;
+  color: #fff;
+  font-size: 20px;
+}
+body .cards .card {
+  width: 18.1818181818%;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+body .cards .card .cover {
+  padding-top: 100%;
+  width: 100%;
+  position: relative;
+}
+body .cards .card .cover img,
+body .cards .card .cover .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .cards .card .cover img {
+  border-radius: 8px 8px 0 0;
+}
+body .cards .card-content {
+  padding: 10px;
+}
+body .cards .card-content .title {
+  font-size: 16px;
+}
+body .cards .card-content .desc {
+  font-size: 12px;
+  margin: 14px 0 8px;
+}
+body .cards .card-content .time {
+  font-size: 10px;
+  color: #808080;
+  margin-bottom: 8px;
+}
+body .main-form form {
+  width: 33%;
+  margin: 0 auto;
+  flex-direction: column;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 20px;
+}
+body .main-form form input[type=text],
+body .main-form form .select {
+  width: 93%;
+  border: 1px solid #808080;
+  padding: 7px 11px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+body .main-form form h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+body .main-form form .select {
+  position: relative;
+  color: #808080;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+body .main-form form .select svg path {
+  transition: 0.4s;
+}
+body .main-form form .select svg path:hover {
+  fill: #ff3d00;
+  cursor: pointer;
+}
+body .main-form form .select .list {
+  display: none;
+  position: absolute;
+  right: 4%;
+  top: 100%;
+  width: 60%;
+  color: #000;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #808080;
+  border-top: none;
+}
+body .main-form form .select .list p {
+  margin-bottom: 4px;
+  transition: 0.4s;
+  border-bottom: 1px solid transparent;
+}
+body .main-form form .select .list p:last-child {
+  margin: 0;
+}
+body .main-form form .select .list p:hover {
+  color: #ff3d00;
+  border-bottom: 1px solid #ff3d00;
+}
+body .main-form form .select:hover .list {
+  display: block;
+}
+body .main-form form .btn.orange {
+  margin-top: 20px;
+}
+body .profile {
+  background-color: #0085ff;
+  padding: 28px;
+  border-radius: 8px;
+  color: white;
+}
+body .profile .block {
+  width: 42.9090909091%;
+}
+body .profile .block .cover {
+  padding-top: 50%;
+  width: 100%;
+  position: relative;
+  width: 50%;
+}
+body .profile .block .cover img,
+body .profile .block .cover .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .profile .block .cover img {
+  border-radius: 8px;
+}
+body .profile .block .btn-exit {
+  margin-top: 55px;
+}
+body .profile .block h3,
+body .profile .block h2 {
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+body .profile .block h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+body .profile .block h2 {
+  font-size: 20px;
+}
+body .profile .block p {
+  margin-bottom: 20px;
+}
+body .achievements h1 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+body .achievements .container .card {
+  width: 10%;
+  flex-direction: column;
+}
+body .achievements .container p {
+  font-weight: 700;
+  font-size: 12px;
+  margin: 7px 0;
+  text-align: center;
+}
+body .achievements .container p.context {
+  font-size: 10px;
+  color: #e3e3e3;
+  margin-bottom: 0;
+}
+body footer {
+  background-color: #808080;
+  padding: 38px 10px;
+  color: #fff;
+}
+body footer h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+body footer h2:hover {
+  color: #ff3d00;
+}
+body footer p {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */

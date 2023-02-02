@@ -1,0 +1,348 @@
+@import "default";
+
+$black: #000;
+$white: #fff;
+$mainBlack: #202020;
+$pink: #ef5da8;
+$orange: #ff3d00;
+$blue: #0085ff;
+$gray: #808080;
+$lightGray: #e3e3e3;
+
+@mixin font($size) {
+  font-family: "Montserrat", sans-serif;
+  font-weight: $size;
+}
+
+@mixin button($color) {
+  color: $color;
+  border: 1px solid $color;
+  @include font(900);
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.4s;
+}
+
+@mixin activeButton($color) {
+  @include button($color);
+  color: $white;
+  background-color: $color;
+  cursor: pointer;
+}
+
+@mixin cover($height) {
+  padding-top: $height;
+  width: 100%;
+  position: relative;
+  img,
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+%container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  &.orange {
+    @include button($orange);
+
+    &:hover {
+      @include activeButton($orange);
+    }
+  }
+
+  &.blue {
+    @include button($blue);
+
+    &:hover {
+      @include activeButton($blue);
+    }
+  }
+  &.white {
+    @include button($white);
+    &:hover {
+      @include activeButton($white);
+      color: $blue;
+    }
+  }
+}
+
+p {
+  @include font(400);
+}
+
+h1,
+h2,
+h3 {
+  @include font(900);
+}
+
+h4 {
+  @include font(700);
+}
+section {
+  margin-bottom: 80px;
+}
+body {
+  padding: 0 16%;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 0;
+
+    .burger-menu {
+      .line {
+        width: 20px;
+        height: 2px;
+        background-color: $black;
+        margin-bottom: 3px;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    h1 {
+      text-transform: uppercase;
+      transition: 0.5s;
+      &.active {
+        color: $pink;
+      }
+      &:hover {
+        color: $orange;
+        cursor: pointer;
+      }
+    }
+    nav {
+      a.active svg path {
+        fill: #ff3d00;
+      }
+      svg {
+        &:first-child {
+          margin-right: 20px;
+        }
+        &:hover {
+          scale: 1.2;
+        }
+      }
+    }
+  }
+  .main {
+    @extend %container;
+    .block {
+      width: 48%;
+      background-color: $blue;
+      border-radius: 8px;
+      .cover {
+        @include cover(80%);
+        img {
+          border-radius: 8px;
+        }
+        .content {
+          h2 {
+            margin: 34px 55px;
+            color: $white;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .cards {
+    @extend %container;
+    .card {
+      width: 200/1100 * 100%; //ширина объекта на макете / ширину внешнего блока * 100%
+      background: #ffffff;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+      .cover {
+        @include cover(100%);
+        img {
+          border-radius: 8px 8px 0 0;
+        }
+      }
+      &-content {
+        padding: 10px;
+        .title {
+          font-size: 16px;
+        }
+        .desc {
+          font-size: 12px;
+          margin: 14px 0 8px;
+        }
+        .time {
+          font-size: 10px;
+          color: $gray;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  .main-form {
+    form {
+      width: 33%;
+      margin: 0 auto;
+      @extend %container;
+      flex-direction: column;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 20px;
+      input[type="text"],
+      .select {
+        width: 93%;
+        border: 1px solid $gray;
+        padding: 7px 11px;
+        border-radius: 6px;
+        margin-bottom: 12px;
+        font-size: 12px;
+      }
+      h2 {
+        font-size: 20px;
+        margin-bottom: 24px;
+      }
+      .select {
+        position: relative;
+        @extend %container;
+        color: $gray;
+        @include font(400);
+        cursor: pointer;
+        svg {
+          path {
+            transition: 0.4s;
+            &:hover {
+              fill: $orange;
+              cursor: pointer;
+            }
+          }
+        }
+        .list {
+          display: none;
+          position: absolute;
+          right: 4%;
+          top: 100%;
+          width: 60%;
+          color: $black;
+          padding: 8px;
+          background-color: $white;
+          border: 1px solid $gray;
+          border-top: none;
+          p {
+            margin-bottom: 4px;
+            transition: 0.4s;
+            border-bottom: 1px solid transparent;
+            &:last-child {
+              margin: 0;
+            }
+            &:hover {
+              color: $orange;
+              border-bottom: 1px solid $orange;
+            }
+          }
+        }
+        &:hover {
+          .list {
+            display: block;
+          }
+        }
+      }
+      .btn.orange {
+        margin-top: 20px;
+      }
+    }
+  }
+  .profile {
+    @extend %container;
+    background-color: $blue;
+    padding: 28px;
+    border-radius: 8px;
+    color: white;
+    .block {
+      width: 472/1100 * 100%;
+      @extend %container;
+      .cover {
+        @include cover(50%);
+        width: 50%;
+        img {
+          border-radius: 8px;
+        }
+      }
+      .btn-exit {
+        margin-top: 55px;
+      }
+      h3,
+      h2 {
+        text-transform: capitalize;
+        margin-bottom: 4px;
+      }
+      h3 {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        
+        margin-bottom: 20px;
+       
+      }
+    }
+  }
+  .achievements {
+    h1 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .container {
+      @extend %container;
+      .card {
+        width: 10%;
+        @extend %container;
+        flex-direction: column;
+      }
+      p {
+        font-weight: 700;
+        font-size: 12px;
+        margin: 7px 0;
+        text-align: center;
+        &.context {
+          font-size: 10px;
+          color: $lightGray;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  footer {
+    @extend %container;
+    background-color: $gray;
+    padding: 38px 10px;
+    color: $white;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      transition: 0.4s;
+      &:hover {
+        color: $orange;
+      }
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
