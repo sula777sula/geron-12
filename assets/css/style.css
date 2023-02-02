@@ -377,4 +377,120 @@ body footer p {
   font-size: 12px;
 }
 
+.authorization {
+  height: 500px;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(249, 247, 247);
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+.authorization .auth {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+}
+.authorization .auth h1 {
+  margin: 15px 0 30px 0;
+}
+.authorization .auth .auth-row {
+  width: 80%;
+}
+.authorization .auth .auth-row input[type=text],
+.authorization .auth .auth-row input[type=password] {
+  padding: 7px 11px;
+  margin-bottom: 15px;
+  width: 96%;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  letter-spacing: 1px;
+}
+.authorization .auth .auth-row .btn.blue {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #0085ff;
+  margin-bottom: 50px;
+}
+.authorization .auth .auth-row .btn.blue:hover {
+  background-color: #fff;
+  color: #0085ff;
+}
+.authorization .auth a {
+  margin-bottom: 15px;
+  color: #000;
+  line-height: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+.authorization .auth a:hover {
+  color: #0085ff;
+}
+
+.registration {
+  height: 500px;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(249, 247, 247);
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+}
+.registration .reg {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+}
+.registration .reg h1 {
+  margin: 15px 0 30px 0;
+}
+.registration .reg .reg-row {
+  width: 80%;
+}
+.registration .reg .reg-row input[type=text],
+.registration .reg .reg-row input[type=password] {
+  padding: 7px 11px;
+  margin-bottom: 15px;
+  width: 96%;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  letter-spacing: 1px;
+}
+.registration .reg .reg-row .btn.blue {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #0085ff;
+  margin-bottom: 50px;
+}
+.registration .reg .reg-row .btn.blue:hover {
+  background-color: #fff;
+  color: #0085ff;
+}
+.registration .reg a {
+  margin-bottom: 15px;
+  color: #000;
+  line-height: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+.registration .reg a:hover {
+  color: #0085ff;
+}
+
 /*# sourceMappingURL=style.css.map */
